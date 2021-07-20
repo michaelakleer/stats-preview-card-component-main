@@ -1,3 +1,22 @@
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    height: 100vh;
+    
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 15px;
+}
+  
   h1, p, .number {
  font-family: 'Inter', sans-serif;
   }
@@ -5,11 +24,27 @@
   ul {
       list-style: none;
   }
-  
-  .attribution { font-size: 11px; text-align: center; }
+
+  .card-container {
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 80%;
+  }
+
+  .card-text {
+    margin: 0 auto;
+  }
+
+  .number {
+    font-weight: 700;
+  }
+
+.mobile-img {
+        display: none;
+    }
+
+  .attribution { font-size: 11px; text-align: center; display: none;}
 
     .attribution a { color: hsl(228, 45%, 44%); }
 
-    .mobile-img {
-        display: none;
-    }
+    
