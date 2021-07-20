@@ -1,4 +1,13 @@
-  * {
+ :root {
+   --main-bg-color: hsl(233, 47%, 7%);
+   --card-bg-color: hsl(244, 38%, 16%);
+   --accent-color: hsl(277, 64%, 61%);
+   --main-heading-stats-color:  hsl(0, 0%, 100%);
+   --main-paragraph-color: hsla(0, 0%, 100%, 0.75);
+   --stat-heading-color: hsla(0, 0%, 100%, 0.6);
+ }
+ 
+ * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,15 +15,21 @@
 
 body {
     height: 100vh;
-    
+    background: #000;
 }
 
 h1 {
   font-size: 36px;
+  font-weight: 700;
 }
 
 p {
   font-size: 15px;
+}
+
+img {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
   
   h1, p, .number {
@@ -25,18 +40,29 @@ p {
       list-style: none;
   }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
   .card-container {
-    border: 1px solid #000;
     border-radius: 8px;
     width: 80%;
+    background: #fff;
   }
 
   .card-text {
     margin: 0 auto;
   }
 
-  .number {
+  .list-number {
     font-weight: 700;
+    font-size: 24px;
+  }
+
+  .list-text {
+   font-family: 'Lexend Deca', sans-serif;
+   text-transform: uppercase;
+   font-size: 12px;
   }
 
 .mobile-img {
