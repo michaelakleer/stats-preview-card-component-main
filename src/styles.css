@@ -1,3 +1,7 @@
+  h1, p, .number {
+ font-family: 'Inter', sans-serif;
+  }
+  
   ul {
       list-style: none;
   }
