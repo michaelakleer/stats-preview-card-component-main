@@ -105,3 +105,54 @@ ul {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (max-width: 767px) {
+  body {
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 40px 0 15px;
+  }
+
+  h1,
+  p,
+  ul {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  p {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .card-container {
+    flex-direction: column-reverse;
+  }
+
+  .card-text {
+    padding: 0;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .stats {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card-image {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+    width: 327px;
+    height: 240px;
+  }
+}
