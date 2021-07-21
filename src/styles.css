@@ -1,76 +1,107 @@
- :root {
-   --main-bg-color: hsl(233, 47%, 7%);
-   --card-bg-color: hsl(244, 38%, 16%);
-   --accent-color: hsl(277, 64%, 61%);
-   --main-heading-stats-color:  hsl(0, 0%, 100%);
-   --main-paragraph-color: hsla(0, 0%, 100%, 0.75);
-   --stat-heading-color: hsla(0, 0%, 100%, 0.6);
- }
- 
- * {
+:root {
+  --main-bg-color: hsl(233, 47%, 7%);
+  --card-bg-color: hsl(244, 38%, 16%);
+  --accent-color: hsl(277, 64%, 61%);
+  --main-heading-stats-color: hsl(0, 0%, 100%);
+  --main-paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --stat-heading-color: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-    height: 100vh;
-    background: #000;
+  height: 100vh;
+  background: var(--main-bg-color);
 }
 
 h1 {
   font-size: 36px;
   font-weight: 700;
+  color: var(--main-heading-stats-color);
+  margin-bottom: 30px;
 }
 
 p {
   font-size: 15px;
+  color: var(--main-paragraph-color);
+  margin: 0 50px 60px 0;
+  line-height: 25px;
+}
+
+span {
+  color: var(--accent-color);
 }
 
 img {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  mix-blend-mode: multiply;
 }
-  
-  h1, p, .number {
- font-family: 'Inter', sans-serif;
-  }
-  
-  ul {
-      list-style: none;
-  }
+
+h1,
+p,
+.list-number {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+.list-number {
+  color: var(--main-heading-stats-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
 
 .uppercase {
   text-transform: uppercase;
 }
 
-  .card-container {
-    border-radius: 8px;
-    width: 80%;
-    background: #fff;
-  }
+.card-container {
+  width: 80%;
+}
 
-  .card-text {
-    margin: 0 auto;
-  }
+.card-text {
+  padding: 70px 70px 55px;
+  border-radius: 8px 0 0 8px;
+  background: var(--card-bg-color);
+}
 
-  .list-number {
-    font-weight: 700;
-    font-size: 24px;
-  }
+.card-image {
+  background: var(--accent-color);
+  border-radius: 0 8px 8px 0;
+}
 
-  .list-text {
-   font-family: 'Lexend Deca', sans-serif;
-   text-transform: uppercase;
-   font-size: 12px;
-  }
+.stats {
+  margin-right: 100px;
+}
+
+.list-number {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.list-text {
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--stat-heading-color);
+  letter-spacing: 1px;
+}
 
 .mobile-img {
-        display: none;
-    }
+  display: none;
+}
 
-  .attribution { font-size: 11px; text-align: center; display: none;}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: none;
+}
 
-    .attribution a { color: hsl(228, 45%, 44%); }
-
-    
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
