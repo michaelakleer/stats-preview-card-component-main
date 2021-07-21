@@ -108,7 +108,7 @@ ul {
 
 @media (max-width: 767px) {
   body {
-    margin: 10px 0;
+    margin: 120px 24px;
   }
 
   h1 {
@@ -117,7 +117,6 @@ ul {
   }
 
   h1,
-  p,
   ul {
     text-align: center;
     padding: 0 20px;
@@ -125,15 +124,21 @@ ul {
 
   p {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0 35px 28px;
+    text-align: center;
+  }
+
+  ul {
+    margin-bottom: 22px;
   }
 
   .card-container {
     flex-direction: column-reverse;
+    width: 100%;
   }
 
   .card-text {
-    padding: 0;
+    padding: 0 0 10px 0;
     border-radius: 0 0 8px 8px;
   }
 
